@@ -21,7 +21,8 @@ if (!$comment) $errors[count($errors)] = 'Por favor ingrese su mensaje.';
 if (!$errors) {
 
 	//recipient
-	$to = 'MAGIC-FLOOR <pisosencastrables@hotmail.com>';
+	// $to = 'MAGIC-FLOOR <pisosencastrables@hotmail.com>';
+	$to = 'MAGIC-FLOOR <matias.gimenez@gmail.com>';
 	//sender
 	$from = $name . ' <' . $email . '>';
 	
