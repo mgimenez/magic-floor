@@ -1,0 +1,509 @@
+@font-face {
+  font-family: "SFSlapstickComicRegular";
+  src: url(fonts/SFSlapstickComic.ttf);
+}
+@font-face {
+  font-family: "BorisBlackBloxx";
+  src:url(fonts/BorisBlackBloxx.ttf);
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	width: 100%;
+}
+
+a{
+	text-decoration: none;
+}
+#header{
+	height:150px;
+	overflow: hidden;
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	background:#fff;
+}
+h1.logo{
+	margin: 10px 0 0 0;
+	background-image: url('../images/logo.png');
+	text-indent: -1000px;
+	height: 111px;
+	width: 250px;
+	float: left;
+}
+#header .contact{
+	float:right;
+}
+#header .nav{
+	float: right;
+	clear: both;
+}
+#header .nav li{
+	float: left;
+	margin: 0 10px;
+}
+#header .nav li a{
+	color: #9A9A9A;
+	font-family: 'BorisBlackBloxx';
+	letter-spacing: 1px;
+	font-size: 1.12em;
+}
+#header .nav li a:hover{
+	color: #8D9408;
+	text-decoration: none;	
+}
+#header .nav li.icon{
+	margin:0 7px 0 0;
+}
+
+
+#home .slider{
+	background-color: #d9e021;
+	height: 60%;
+	margin-bottom: 4%;
+}
+.slider:after{
+	height: 14px;
+	width: 100%;
+	position: absolute;
+	display: block;
+	background-image: url('../images/bottom_slider.png');
+	content: '';
+	top:60%;
+}
+
+.slider:before{
+	height: 14px;
+	width: 100%;
+	position: absolute;
+	display: block;
+	top: 0;
+	background-image: url('../images/top_slider.png');
+	content: '';
+}
+
+#home .slider img{
+	margin-top: -45px;
+	float: right;
+	max-width:100%
+}
+
+#carousel-home ul{
+	text-align: center;
+	overflow: hidden;
+}
+#carousel-home ul li{height: 400px;}
+#carousel-home .ch-user-no-select{
+	color: #fff;
+	margin-top: -45px;
+}
+#home .slider h1{
+	font-family: 'BorisBlackBloxx';
+	font-size: 1.3em;
+	text-align: left;
+	width: 420px;
+	color: #fff;
+	padding-top: 50px;
+	margin: 0;
+	margin-left: 30px;
+	letter-spacing: 1px;
+	line-height: 40px;
+	float:left;
+}
+#home .slider h1 span.fzBig{
+	font-size: 1.7em;
+}
+.wfix{
+	width: 920px;
+	margin: auto;
+	padding: 0 20px;
+}
+
+.ico{
+	background-image: url('../images/sprite_ico.png');
+	background-repeat: no-repeat;
+	width: 18px;
+	height: 18px;
+	display: block;
+}
+.ico.fb{
+	background-position: center top;
+	opacity: 0.7;
+}
+a.ico.fb:hover,
+a.ico.tw:hover{
+	opacity: 1;
+}
+.ico.tw{
+	background-position: center -18px;	
+	opacity: 0.7;
+}
+.ico.phone{
+	background-position: center -36px;
+	height: 20px;
+}
+#home{
+	position: relative;
+	top: 150px;
+	height: 660px;
+}
+#home .desta h2{
+	font-family: 'BorisBlackBloxx';
+	font-size: 1.1em;
+	width: 150px;
+	color: #D9E021;	
+}
+#home .desta {
+	height:125px;
+	text-align:center;
+}
+#home .desta li{
+	width: 30%;
+	position: relative;
+	display:inline-block;
+	text-align:left;
+	
+}
+#home .desta li p,
+#product p {
+	color: #999;
+	font-size: 1.1em;
+}
+#home .desta li.second{
+	margin:0 4%;
+}
+#home .desta li.second h2,
+#home .desta li.third h2{
+	margin-top: 30px;
+}
+#home .desta li.first img{
+	top: -25px;
+}
+#home .desta li.second img{
+	top: -30px;
+}
+#home .desta li.third img{
+	right: 65px;
+	top: -35px;
+}
+#home .desta img{
+	position: absolute;
+	right: 30px;
+}
+#products:after{
+	height: 14px;
+	width: 100%;
+	position: absolute;
+	display: block;
+	background-image: url('../images/bottom_products.png');
+	content: '';
+	top:98%;
+}
+
+#products:before{
+	height: 14px;
+	width: 100%;
+	position: absolute;
+	display: block;
+	background-image: url('../images/top_products.png');
+	content: '';
+}
+#products{
+	background: #eee;
+}
+#products{
+	position:relative;
+	top:150px;	
+}
+#products .wfix{
+	overflow: hidden;
+}
+#products ul{
+	padding-top: 45px;
+	margin: 0 80px;
+}
+#products ul.left{
+	float: left;
+}
+#products ul.right{
+	float: right;
+}
+#products li{
+	width: 300px;
+}
+#products li.odd:hover span{
+	color: #B6D987;
+
+}
+/*#products li.odd:hover{
+	background-image: none;
+}*/
+
+#products li.even:hover span{
+	color: #D9E021;
+}
+#products li.even:hover{
+	background-image: none;
+}
+
+#products li.even a span{
+	color:#B6D987
+}
+#products li.odd a span{
+	color: #D9E021;
+
+}
+
+/*#products li.odd{
+	background-image: url('../images/bkg_prod1.png');
+	background-repeat: no-repeat;
+	background-position:right top;
+}
+#products li.even{
+	background-image: url('../images/bkg_prod2.png');
+	background-repeat: no-repeat;
+	background-position:right top;
+}*/
+#products li a span.two-lines{
+	padding-top:40px;
+}
+#products li a span{
+	border-bottom: 1px dotted #CCC;
+	width: 207px;
+	font-family: 'BorisBlackBloxx';
+	font-size: 16px;
+	display: block;
+	padding-top: 60px;
+	
+}
+#products li a img{
+	margin-top: -92px;
+	padding-left: 236px;
+	zoom: 0.85;
+}
+#products li a:hover{
+	text-decoration: none;
+}
+
+/* PRODUCT */
+#product{
+	position:relative;
+	top: 170px; /* +3 x #products:after */
+}
+#product .col-left{
+	width: 66%;
+	float: left;
+	margin-right: 35px;
+}
+#product .col-right{
+	float: left;
+}
+#product h2{
+	border-bottom: dotted 1px #ccc;
+}
+#gallery{
+	width: 309px;
+	float: left;
+	margin-right: 35px;
+}
+
+
+#product h2{
+	font-family: 'BorisBlackBloxx';
+	font-size: 16px;
+}
+#product .presets{
+	float: left;
+	width: 215px;
+	margin-top: 20px;
+}
+#product h4{
+	font-size: 15px;
+}
+
+.sizes td{
+	width: 70px;
+	font-size: 13px;
+	color: #999;
+	text-align: center;
+}
+
+.sizes thead td{	
+	font-weight: bold;
+}
+.colors,.sizes{
+	margin-bottom: 20px;
+}
+.colors ul{
+	overflow: hidden;
+}
+.colors li{
+	width: 25px;
+	height: 25px;
+	float: left;
+	margin-right: 5px;
+	background: red;
+}
+.colors li.red{background:red }
+.colors li.orange{background:orange }
+.colors li.yellow{background:yellow }
+.colors li.blue{background:blue }
+.colors li.green{background:green }
+.colors li.black{background:black }
+.presets .more.marginTop{
+	margin-top: 20px;
+}
+.presets .more ul{
+	overflow: hidden;
+	width: 300px;
+}
+.presets .more li{
+	float: left;
+	width: 120px;
+}
+
+#product .nav-prod li{
+	height: 100px;
+}
+/*
+#product .nav-prod li.odd img{
+	background-image:url('../images/products/bkg_navProd_odd.png');
+}
+#product .nav-prod li.even img{
+	background-image:url('../images/products/bkg_navProd_even.png');
+}
+*/
+#product .nav-prod li.odd img,
+#product .nav-prod li.even span{
+	float: left;
+}
+#product .nav-prod li.even img,
+#product .nav-prod li.odd span{
+	float: left;
+}
+#product .nav-prod li span{
+	font-family: 'BorisBlackBloxx';
+	font-size: 14px;
+	width: 156px;
+	border-bottom: dotted 1px #ccc;
+	margin-top: 25px;
+}
+#product .nav-prod li span.two-lines{
+	margin-top: 17px;
+	
+}
+#product .nav-prod li.odd span{
+	color: #71C933;
+	margin-left: 5px;
+}
+#product .nav-prod li.even span{
+	color: #D9E021;
+}
+
+#product .nav-prod li a:hover img,
+#product .nav-prod li a.active img{
+	background-image: none;
+}
+#product .nav-prod li.even a:hover span,
+#product .nav-prod li.even a.active span{
+	color: #71C933;
+}
+#product .nav-prod li.odd a:hover span{
+	color: #D9E021;
+}
+.nav-prod img {
+	width: 35%;
+}
+
+#home .slider img.b{
+	width:45%;
+	margin-top:35px;
+}
+#home .slider img.c{
+	width:45%;
+	margin-top:20px;
+}
+
+
+/* COLCHONETAS */
+.variations ul{
+	margin-left: 15px;
+}
+.variations ul.noMargin{
+	margin-left: 0;
+}
+.variations ul{
+	color:#999;
+}
+
+/* COLCHONETAS */
+
+#carrousell img{
+	cursor: pointer;
+}
+#panel{
+	height: 281px;
+}
+.loader{
+	text-align: center;
+	vertical-align: middle;
+	line-height: 281px;
+}
+@media screen and (max-width: 1366px)  and (max-height: 900px) {
+	.nav-prod img {
+		width: 24%;
+	}
+	#product .nav-prod li {
+		height: 65px;
+	}
+	#product .nav-prod li span{
+		margin-top: 16px;
+	}
+	#product .nav-prod li span.two-lines {
+		margin-top: 3px;
+	}
+
+}
+
+	
+@media screen and (max-width: 480px) {
+				
+	#header{
+   		position:static;
+   		height: auto;
+  	}
+  	#header .logo, #header .contact, #header .nav, #header .nav li{
+  		float: none;
+  	}
+	#header .nav li{
+		margin: 5px 0;
+		text-align: center;
+	}
+
+	.wfix{
+		width: 480px;
+		margin:0;
+	}
+	#home{
+		top:0;
+	}
+	#home .desta li{
+		display:block;
+		width: 90%;
+	}
+	#home .desta li.second{
+		margin:0;
+	}
+	.slider{
+		display: none;
+	}
+
+}
+@media screen and (max-width: 320px) {
+	.wfix{
+		width: 320px;
+	}
+}
