@@ -106,8 +106,6 @@ $(document).ready(function(){
 				});
 				loadContact();
 
-				// "Trigger" Play Music Player 
-				$('.mp3player object').removeClass('ch-hide');
 				var carouselHome = $("#carousel-home").carousel().play(5000);
 			
 			
