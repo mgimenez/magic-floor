@@ -65,17 +65,17 @@ h1.logo{
 	position: relative;
 }
 #header .contact .fbLike{
-	margin-bottom: 5px;
-	position: relative;
-    left: 23px;
+    margin: 5px 0;
 }
 #header .contact .last{
-	margin-top: 7px;
 	margin-bottom: 7px;
 }
 #header .nav{
 	float: right;
 	clear: both;
+	position: absolute;
+	bottom: 5px;
+	right: 20px;
 }
 #header .nav li{
 	float: left;
@@ -167,6 +167,8 @@ top: 315px;
 	width: 920px;
 	margin: auto;
 	padding: 0 20px;
+	position: relative;
+	height: 100%;
 }
 
 .ico{
