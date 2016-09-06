@@ -368,6 +368,7 @@ padding-top: 20px;
 	width: 309px;
 	float: left;
 	margin-right: 35px;
+	margin-top: 30px;
 }
 
 
@@ -583,6 +584,13 @@ padding-top: 20px;
 	padding-top: 10px;
 }
 
+#empresa ul {
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+#empresa .costos p {
+	margin-bottom: 10px;
+}
 #contacto .wfix{
 	overflow: hidden;
 }
@@ -793,4 +801,38 @@ padding-top: 20px;
 
 .ch-hidden{
 	visibility: hidden;
+}
+
+.ico-info {
+	position: relative;
+}
+
+.ico-info:after {
+    content: 'i';
+    font-style: italic;
+    border-radius: 50%;
+    border: solid 1px #ccc;
+    background-color: #ccc;
+    color: #fff;
+    height: 15px;
+    width: 15px;
+    display: block;
+    position: absolute;
+    top: 2px;
+    right: -7px;
+    line-height: 1.2;
+    font-family: serif;
+    cursor: pointer;
+}
+
+.ch-tooltip.ch-points-ltlb .ch-tooltip-content:after, .ch-tooltip.ch-points-ctcb .ch-tooltip-content:after, .ch-tooltip.ch-points-rtrb .ch-tooltip-content:after {
+	border-bottom-color: #fff;
+}
+
+.ch-tooltip.ch-points-lblt .ch-tooltip-content:after, .ch-tooltip.ch-points-cbct .ch-tooltip-content:after, .ch-tooltip.ch-points-rbrt .ch-tooltip-content:after {
+	border-top-color: #fff;
+}
+
+.ch-tooltip.ch-points-lblt .ch-tooltip-content:before, .ch-tooltip.ch-points-cbct .ch-tooltip-content:before, .ch-tooltip.ch-points-rbrt .ch-tooltip-content:before {
+	border-top-color: #ccc;
 }

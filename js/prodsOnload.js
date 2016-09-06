@@ -26,5 +26,9 @@ $(document).ready(function(){
 		});
 	}
 	var foo = $(".colors li").tooltip();
+	var toolTopInfoPiso = $(".js-ico-info").tooltip({
+		"points": "lb lt",
+		"offset": "50 -10"
+	});
 
 })
